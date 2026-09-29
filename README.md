@@ -1,6 +1,6 @@
 # Image Dimensionality Reduction with a Convolutional Autoencoder
 
-Unsupervised dimensionality reduction of overhead images (**car** vs **plane**, 28×28 grayscale) using a convolutional autoencoder. Each 784-pixel image is compressed into a **128-dimensional latent vector** and reconstructed. Starting from a simple baseline, the architecture is improved with an extra convolutional layer and Batch Normalization, then tuned on learning rate. Reconstruction quality is measured with SSIM.
+Unsupervised dimensionality reduction of overhead images (**car** & **plane**, 28×28 grayscale) using a convolutional autoencoder. Each 784-pixel image is compressed into a **128-dimensional latent vector** and reconstructed. Starting from a simple baseline, the architecture is improved with an extra convolutional layer and Batch Normalization, then tuned on learning rate. Reconstruction quality is measured with SSIM.
 
 **Result:** mean SSIM improved from **0.7017 to 0.8543** (+21.7%), with the biggest gain on the harder `plane` class (+29.3%).
 
